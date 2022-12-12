@@ -57,7 +57,8 @@ class Dice:
             dice2.roll("S")
             for j in range(4):
                 dice2.rightSpin()
-                if self.frt == dice2.frt and self.und == dice2.und and self.rit == dice2.rit and self.lft == dice2.lft and self.top == dice2.top and self.bak == dice2.bak:
+                if self.frt == dice2.frt and self.und == dice2.und and self.rit == dice2.rit and \
+                   self.lft == dice2.lft and self.top == dice2.top and self.bak == dice2.bak:
                     return True
             # j-end
         # i-end
@@ -65,14 +66,16 @@ class Dice:
         dice2.roll("W")
         for i in range(4):
             dice2.rightSpin()
-            if self.frt == dice2.frt and self.und == dice2.und and self.rit == dice2.rit and self.lft == dice2.lft and self.top == dice2.top and self.bak == dice2.bak:
+            if self.frt == dice2.frt and self.und == dice2.und and self.rit == dice2.rit and \
+               self.lft == dice2.lft and self.top == dice2.top and self.bak == dice2.bak:
                 return True
         # 左を見る
         dice2.roll("E")
         dice2.roll("E")
         for i in range(4):
             dice2.rightSpin()
-            if self.frt == dice2.frt and self.und == dice2.und and self.rit == dice2.rit and self.lft == dice2.lft and self.top == dice2.top and self.bak == dice2.bak:
+            if self.frt == dice2.frt and self.und == dice2.und and self.rit == dice2.rit and \
+               self.lft == dice2.lft and self.top == dice2.top and self.bak == dice2.bak:
                 return True
         return False
 
